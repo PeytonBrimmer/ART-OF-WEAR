@@ -10,7 +10,8 @@ import Cart from './pages/Cart/Cart.jsx';
 import Shirts from './pages/Shirts/Shirts.jsx';
 import Success from './pages/Success/Success.jsx';
 // import OrderHistory from
-// import User from './pages/User.jsx'
+import User from './pages/User/User.jsx'
+import NativeProfile from './pages/NativeProfile/NativeProfile.jsx';
 const router = createBrowserRouter([
     {
       path: '/',
@@ -35,9 +36,17 @@ const router = createBrowserRouter([
           },{
             path: '/Cart',
             element: <Cart />
-          }, {
-            path: '/success',
+          },{
+            path: '/Success',
             element: <Success />
+          },
+          {
+            path: '/User/:id',
+            element: <User />
+          },
+          {
+            path: '/User',
+            element: <NativeProfile />
           },
       ],
     },
